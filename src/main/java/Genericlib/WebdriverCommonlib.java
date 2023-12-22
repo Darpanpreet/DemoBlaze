@@ -16,14 +16,18 @@ public class WebdriverCommonlib {
 
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\darpa\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+					"chrome driver path");
+			// Add your chrome driver path
+			
 			System.setProperty("webdriver.http.factory", "jdk-http-client");
 			driver = new ChromeDriver();
 			System.out.println(browserName + "browser is up and running");
 
 		} else if (browserName.equalsIgnoreCase("Edge")) {
 			System.setProperty("webdriver.edge.driver",
-					"C:\\Users\\darpa\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+					"Edge driver path");
+			// Add your edge driver path
+			
 			driver = new EdgeDriver();
 			System.out.println(browserName + "browser is up and running");
 
